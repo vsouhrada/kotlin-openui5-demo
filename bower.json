@@ -1,0 +1,40 @@
+{
+  "name": "kpi-dashboard",
+  "authors": [
+    "klevytska <KLevytska@gk-software.com>",
+    "omakhobei <OMakhobei@gk-software.com>",
+    "vsouhrada <vsouhrada@gk-software.com>",
+    "sboese <sboese@gk-software.com>"
+  ],
+  "description": "The KPI Dashboard allows a high-level management overview of commercial infromation in graphical and tabular form",
+  "dependencies": {
+    "openui5-sap.ui.core": "openui5/packaged-sap.ui.core#~1.40.0",
+    "openui5-sap.m": "openui5/packaged-sap.m#~1.40.0",
+    "openui5-themelib_sap_bluecrystal": "openui5/packaged-themelib_sap_belize#~1.40.0",
+    "openui5-sap.ui.layout": "openui5/packaged-sap.ui.layout#~1.40.0",
+    "openui5-sap.ui.unified": "openui5/packaged-sap.ui.unified#~1.40.0",
+    "openui5-sap.ui.commons": "openui5/packaged-sap.ui.commons#~1.40.0",
+    "openui5-sap.tnt": "openui5/packaged-sap.tnt#~1.40.0",
+    "openui5-sap.uxap": "openui5/packaged-sap.uxap#~1.40.0"
+  },
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "kpi",
+    "dashboard",
+    "openui5",
+    "gk",
+    "dashboard",
+    "gk",
+    "kpi"
+  ],
+  "license": "Apache 2.0",
+  "homepage": "https://confluence.gk.gk-software.com/display/FUT/UI5-KPI-Dashboard",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
