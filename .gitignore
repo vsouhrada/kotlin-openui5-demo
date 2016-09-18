@@ -92,6 +92,7 @@ temp
 dist
 webapp/lib
 www/lib
+www/out
 docs/js/Component.js.html
 docs/js/core_model_models.js.html
 docs/js/facade_operator_OperatorFacade.js.html

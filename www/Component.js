@@ -25,6 +25,10 @@ sap.ui.define([
 			// initialize the error handler with the component
 			this._oErrorHandler = new ErrorHandler(this);
 
+			var appContext = new Object();
+			appContext.kopenui5 = kotlin.modules.kopenui5.com.github.vsouhrada.lib.kopenui5;
+			sap.ui.getCore().ApplicationContext = appContext;
+
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
 

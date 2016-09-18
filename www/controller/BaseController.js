@@ -3,7 +3,7 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 
-	return Controller.extend("myCompany.myApp.controller.BaseController", {
+	var a = {
 		/**
 		 * Convenience method for accessing the router.
 		 * @public
@@ -56,6 +56,8 @@ sap.ui.define([
 			);
 		}
 
-	});
+	};
+
+	return Controller.extend("myCompany.myApp.controller.BaseController", a);
 
 });
