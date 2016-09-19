@@ -1,6 +1,8 @@
-package com.github.vsouhrada.lib.kopenui5.sap
+package com.github.vsouhrada.lib.kopenui5.core
 
-import com.github.vsouhrada.lib.kopenui5.core.IBaseController
+import com.github.vsouhrada.lib.kopenui5.sap.JSONModel
+import com.github.vsouhrada.lib.kopenui5.sap.getViewModel
+import com.github.vsouhrada.lib.kopenui5.sap.setViewModel
 
 /**
  * @author vsouhrada
@@ -8,7 +10,7 @@ import com.github.vsouhrada.lib.kopenui5.core.IBaseController
  * @version 0.1.0
  * @since 0.1.0
  */
-class BaseController(/*val sapController: Controller*/) : IBaseController {
+class BaseController() : IBaseController {
 
   @native
   fun getRouter(): dynamic = js("sap.ui.core.UIComponent.getRouterFor(this);")
