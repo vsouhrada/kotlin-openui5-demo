@@ -3,7 +3,7 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 
-	var oFnController = kotlin.modules.kopenui5.com.github.vsouhrada.lib.kopenui5.sap.BaseController;
+	var oFnController = kotlin.modules.kopenui5.com.github.vsouhrada.lib.kopenui5.core.BaseController;
 	var oController = Object.create(oFnController.prototype);
 	//var oController = new (Function.prototype.bind.apply(oFnController, null));
 
