@@ -16,5 +16,7 @@ object OpenUI5 {
   @native
   fun createJSONModel(): JSONModel = js("new sap.ui.model.json.JSONModel()")
 
-  @native fun createController(controllerPath: String): Controller = Controller.extend(controllerPath)
+  //fun createController(controllerPath: String): Controller = Controller.extend(controllerPath)
+
+  //fun createBaseController(): Controller = return BaseController()
 }

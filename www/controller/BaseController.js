@@ -58,6 +58,21 @@ sap.ui.define([
 
 	};
 
-	return Controller.extend("myCompany.myApp.controller.BaseController", a);
+	function createKotlinController() {
+		// Get reference to CounterController object from Kotlin
+		var oKotlinController = kotlin.modules.kopenui5.com.github.vsouhrada.lib.kopenui5.sap.BaseController;
+		// Create and return instance of CounterController.kt (written in Kotlin)
+		var o = Object.create(oKotlinController.prototype);
+		return oKotlinController.apply(o, []) || o;
+		//return o;
+	};
+
+	var oFnController = kotlin.modules.kopenui5.com.github.vsouhrada.lib.kopenui5.sap.BaseController;
+	var oController = Object.create(oFnController.prototype);
+	//var oController = new (Function.prototype.bind.apply(oFnController, null));
+	//oController.setController(Object.create(Controller.prototype));
+
+
+	return Controller.extend("myCompany.myApp.controller.BaseController", oController);
 
 });

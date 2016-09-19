@@ -3,9 +3,9 @@ package com.github.vsouhrada.lib.kopenui5.sap
 /**
  * @author vsouhrada
  */
-@native
-object Controller {
+open class Controller(sapController: dynamic) {
 
-  fun extend(path: String): Controller
+  //@native
+  //fun getView(): View
 
 }
