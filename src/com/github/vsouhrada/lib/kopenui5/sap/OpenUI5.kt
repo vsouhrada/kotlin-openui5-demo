@@ -1,10 +1,9 @@
 package com.github.vsouhrada.lib.kopenui5.sap
 
-import com.github.vsouhrada.lib.kopenui5.sap.JSONModel
-
 /**
  * Kotlin OpenUI5 wrapper
  * @author vsouhrada
+ * @version 0.1.0
  * @since 0.1.0
  */
 object OpenUI5 {

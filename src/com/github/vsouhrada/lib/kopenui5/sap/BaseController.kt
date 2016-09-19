@@ -5,14 +5,10 @@ import com.github.vsouhrada.lib.kopenui5.core.IBaseController
 /**
  * @author vsouhrada
  * @see[IBaseController]
+ * @version 0.1.0
+ * @since 0.1.0
  */
 class BaseController(/*val sapController: Controller*/) : IBaseController {
-
-//  lateinit var sapController: Controller
-//
-//  override fun setController(sapController: Controller) {
-//    this.sapController = sapController
-//  }
 
   @native
   fun getRouter(): dynamic = js("sap.ui.core.UIComponent.getRouterFor(this);")
@@ -21,7 +17,6 @@ class BaseController(/*val sapController: Controller*/) : IBaseController {
 
   override fun setModel(model: JSONModel, name: String): JSONModel = setViewModel(model, name)
 
-  //fun getView() = View
 
   fun getResourceBundle() = js("return this.getOwnerComponent().getModel('i18n').getResourceBundle();")
 
