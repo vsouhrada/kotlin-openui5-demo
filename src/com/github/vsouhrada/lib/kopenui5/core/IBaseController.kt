@@ -1,6 +1,5 @@
 package com.github.vsouhrada.lib.kopenui5.core
 
-import com.github.vsouhrada.lib.kopenui5.sap.Controller
 import com.github.vsouhrada.lib.kopenui5.sap.JSONModel
 
 /**

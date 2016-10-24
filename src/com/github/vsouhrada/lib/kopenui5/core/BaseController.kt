@@ -1,9 +1,6 @@
 package com.github.vsouhrada.lib.kopenui5.core
 
-import com.github.vsouhrada.lib.kopenui5.sap.JSONModel
-import com.github.vsouhrada.lib.kopenui5.sap.getI18nResourceBundle
-import com.github.vsouhrada.lib.kopenui5.sap.getViewModel
-import com.github.vsouhrada.lib.kopenui5.sap.setViewModel
+import com.github.vsouhrada.lib.kopenui5.sap.*
 
 /**
  * @author vsouhrada
@@ -14,14 +11,15 @@ import com.github.vsouhrada.lib.kopenui5.sap.setViewModel
 class BaseController() : IBaseController {
 
   @native
-  fun getRouter(): dynamic = js("sap.ui.core.UIComponent.getRouterFor(this);")
+  fun getRouter(): dynamic = getRouterFor(this)
 
-  override fun getModel(name: String): JSONModel = getViewModel(name)
+  override fun getModel(name: String): JSONModel = View.getViewModel(name)
 
-  override fun setModel(model: JSONModel, name: String): JSONModel = setViewModel(model, name)
+  override fun setModel(model: JSONModel, name: String): JSONModel = View.setViewModel(model, name)
 
+  fun onInit() { }
 
-  fun getResourceBundle() = getI18nResourceBundle()
+  fun getResourceBundle() = OwnerComponent.getI18nResourceBundle()
 
   fun onShareEmailPress() {
     js("""
