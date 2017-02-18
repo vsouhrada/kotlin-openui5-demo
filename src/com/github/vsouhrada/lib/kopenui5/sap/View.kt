@@ -1,7 +1,7 @@
 package com.github.vsouhrada.lib.kopenui5.sap
 
 
-object View {
+//bject View {
 
   /**
    * @param name
@@ -23,4 +23,4 @@ object View {
   @native("this.getView().getBusyIndicatorDelay()")
   fun getBusyIndicatorDelay(): Int
 
-}
+//}

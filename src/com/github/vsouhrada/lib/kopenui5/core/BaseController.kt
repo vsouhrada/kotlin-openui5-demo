@@ -8,18 +8,18 @@ import com.github.vsouhrada.lib.kopenui5.sap.*
  * @version 0.1.0
  * @since 0.1.0
  */
-class BaseController() : IBaseController {
+open class BaseController() : IBaseController {
 
   @native
   fun getRouter(): dynamic = getRouterFor(this)
 
-  override fun getModel(name: String): JSONModel = View.getViewModel(name)
+  override fun getModel(name: String): JSONModel = getViewModel(name)
 
-  override fun setModel(model: JSONModel, name: String): JSONModel = View.setViewModel(model, name)
+  override fun setModel(model: JSONModel, name: String): JSONModel = setViewModel(model, name)
 
-  fun onInit() { }
+  open fun onInit() { }
 
-  fun getResourceBundle() = OwnerComponent.getI18nResourceBundle()
+  fun getResourceBundle() = getI18nResourceBundle()
 
   fun onShareEmailPress() {
     js("""
